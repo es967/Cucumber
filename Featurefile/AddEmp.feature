@@ -9,19 +9,14 @@ Scenario: successful Login with vaild credentials
    When click pim button
    When Click Add button
    When Fill Add fname and mname and lname
-   |qedge01|manua2|selenium|
-   When  Capture  before emid
-   When  click Save button
-   When getting After emid
-   When  click Leave button
-   When click from
-   When Select date and Month and Select Year
-   When Select To Date and month and select year
-   When Select Employee Name
-   When click All
-   When click Secrch button
-   When click click reset button
    Then close browser
+   Examples:
+   |qedge01|manua2|selenium|
+   |qedge02|selenium|manual|
+   |qedge03|manual|selenium|
+   |qedge04|selenium|manual|
+   |selenium01|qedge|manual|
+      
    
 
 	
