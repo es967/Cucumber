@@ -3,17 +3,25 @@ Feature: login
 Scenario: successful Login with vaild credentials
    Given User Launch Chrome browser
    When User opens Url"http://orangehrm.qedgetech.com/"
-   And User enter user name as "Admin" password "Qedge123!@#"
-   And click on login
-   Then page should be "Dashboard"
-   Then click pim button
-   And Click Add button
-   And fname and mname lname
-   |Anki01|Eswar02|Reddy03|
-   And getting before emid
-   And click Save button
-   Then getting After emid
-   
+   When User enter user name as "Admin" password "Qedge123!@#"
+   When click on login
+   When page should be "Dashboard"
+   When click pim button
+   When Click Add button
+   When Fill Add fname and mname and lname
+   |qedge01|manua2|selenium|
+   When  Capture  before emid
+   When  click Save button
+   When getting After emid
+   When  click Leave button
+   When click from
+   When Select date and Month and Select Year
+   When Select To Date and month and select year
+   When Select Employee Name
+   When click All
+   When click Secrch button
+   When click click reset button
+   Then close browser
    
 
 	
